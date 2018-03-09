@@ -1,0 +1,19 @@
+extends layout
+
+block content
+	.container
+		video#videoStream
+		button#btnTakePhoto.btn.btn-primary Take Snapshot
+		button#btnClear.btn.btn-danger Clear
+		select#filters(name='filters')
+			option(value='none') None
+			option(value='blur(10px)') Blur
+			option(value='brightness(100%)') Brightness
+			option(value='contrast(100%)') Contrast
+			option(value='grayscale(100%)') Gray Scale
+			option(value='hue-rotate(45deg)') Hue
+			option(value='invert(100%)') Invert
+			option(value='Saturate(100%)') Saturate
+			option(value='sepia(100%)') Sepia
+		canvas#mainCanvas
+		#photos
