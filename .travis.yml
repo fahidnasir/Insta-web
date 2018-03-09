@@ -2,6 +2,16 @@ language: node_js
 node_js:
   - "lts/*"
   - "8"
+branches:
+  only:
+    - master
+script:
+  - "npm run test"
 cache:
   directories:
     - "node_modules"
+deploy:
+  app: insta-web-filters
+  provider: heroku
+  api_key:
+    secure: 4ca3948b-4208-4c56-a21e-c1148e42ed89
