@@ -1,6 +1,5 @@
 language: node_js
 node_js:
-  - "lts/*"
   - "8"
 branches:
   only:
@@ -14,4 +13,4 @@ deploy:
   app: insta-web-filters
   provider: heroku
   api_key:
-    secure: 4ca3948b-4208-4c56-a21e-c1148e42ed89
+    secure: $DEPLOY_API_KEY
