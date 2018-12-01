@@ -2,7 +2,7 @@ extends layout
 
 block content
 	.container
-		video#videoStream
+		video(autoplay=true)#videoStream
 		button#btnTakePhoto.btn.btn-primary Take Snapshot
 		button#btnClear.btn.btn-danger Clear
 		select#filters(name='filters')
